@@ -1,6 +1,6 @@
 // Storing Values with Assignment Operator
 
-// There are differences between declear variables and assigning vaiable
+// There are differences between declear variables and assigning variable
 var a; // here the variable is being decleared to be called a, so it is undefined cuz has not be assign yet
 var b = 2; // and then here I have assigned the variable
 

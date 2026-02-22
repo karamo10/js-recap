@@ -1,4 +1,6 @@
 // Data types: undefined, null, boolean, string, symbol, number and object
+
+
 // 1. undefined: a variable that has not been assigned a value is of type undefined
 let a;
 console.log(a); // undefined

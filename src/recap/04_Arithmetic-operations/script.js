@@ -1,3 +1,5 @@
+// Arithmetic Operations
+
 // Adding number
 let oranges = 10 + 5; // 15
 
@@ -22,8 +24,6 @@ myBalance = myBalance - 1;
 myBalance--; // myBalance is now 10
 console.log(myBalance);
 
-console.log('Numbers');
-
 // Decimal Numbers (sometimes refers to as floating-point numbers or floats)
 let myDecimal = 5.7; // this is a decimal number
 
@@ -36,8 +36,8 @@ let quotientOfDecimals = 5.0 / 2.0; // 2.5
 console.log(quotientOfDecimals);
 
 // Finding a Remainder (or Modulus is just like a percent % sign it gives the remainder of division of 2 numbers)
-let remainder = 11 % 3; // 2 because 3 goes into 11 three times with a remainder of 2
-console.log(remainder);
+let remainder = 11 % 3; 
+console.log(remainder); // 2 because 3 goes into 11 three times with a remainder of 2
 
 // Compond Assignment with Augmented Addition
 let a = 3;

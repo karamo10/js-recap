@@ -21,7 +21,7 @@ console.log(ourName); // Fighters
 console.log(pi); // 3.14
 
 // the diffrence between var, let and const
-// var is going to be us throungout the whole program, let will only be use within the scope of were it was declear, while const is variale that should never change
+// var is going to be use througout the whole program, let will only be use within the scope of were it was declear, while const is variale that should never change
 
 
 // Case Sensitivity in Variables
