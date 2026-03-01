@@ -76,4 +76,4 @@ if (withdrawAmount <= 0) {
 }
 // output: Withdrawal successful! New balance: 350
 
-// node src/recap/10-Conditional-Logics/04_Challenges/script.js
+// node src/recap/10-Conditional-Logics/06_Challenges/script.js
