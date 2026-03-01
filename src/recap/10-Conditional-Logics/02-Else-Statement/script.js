@@ -4,7 +4,5 @@
 // but with an else statement and altimate block of code can be executed when it is not true 
 
 
-// 1:21:36
-
 
 // node src/recap/10-Conditional-Logics/02-Else-Statement/script.js 

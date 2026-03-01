@@ -20,7 +20,7 @@ function trueOrFalse(wasThatTrue) {
 console.log(trueOrFalse(true));
 
 
-// Logical Operators
+// LOGICAL OPERATORS
 
 // Comparison with the Equality (==) Operator.
 
