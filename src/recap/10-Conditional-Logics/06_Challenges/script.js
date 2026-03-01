@@ -76,4 +76,41 @@ if (withdrawAmount <= 0) {
 }
 // output: Withdrawal successful! New balance: 350
 
+
+// Challenge 4 Golf Code
+let names = ["Hole-in-one", "Eargle", "Birdie", "Par", "Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  if (strokes == 1) {
+    return names[0]
+  } else if (strokes <= par - 2) {
+    return names[1]
+  } else if (strokes == par - 1) {
+    return names[2]
+  } else if (strokes == par) {
+    return names[3]
+  } else if (strokes == par + 1) {
+    return names[4]
+  } else if (strokes >= par + 2) {
+    return names[5]
+  }
+}
+console.log(golfScore(5, 1));  // Hole-in-one
+console.log(golfScore(5, 2));  // Eagle  (5-2=3, strokes 2 <= 3)
+console.log(golfScore(5, 4));  // Birdie (par-1 = 4)
+console.log(golfScore(5, 5));  // Par
+console.log(golfScore(5, 6));  // Bogey
+console.log(golfScore(5, 7));  // Go Home!
+
+/*
+Strokes        Return
+1            "Hole-in-one"
+<= par - 2   "Eargle"
+par - 1      "Birdie" 
+par          "par"
+par + 1      "Bogey"
+>= par + 2   "Go Home!"
+*/
+
+
 // node src/recap/10-Conditional-Logics/06_Challenges/script.js
