@@ -263,4 +263,80 @@ console.log(calculate(10, 5, '*')); // 50
 console.log(calculate(10, 5, '/')); // 2
 console.log(calculate(10, 5, '!')); // Invalid operator
 
+// Ch3. Mini Project — Food Ordering System
+/*
+
+The Menu:
+
+CODE             FOOD             PRICE
+"B"              Burger           $5
+"P"              Pizza            $8
+"S"              Sushi            $12
+"T"              Tacos            $6
+Anything else    "Invalid item"   -
+
+Rules:
+
+User picks a food item using its code
+User picks a quantity
+If quantity is 0 or less - "Invalid quantity"
+Calculate the total price
+If total is $20 or more - apply 10% discount
+Print the order summary
+
+Expected Output should look like this:
+Order: Pizza 
+Quantity: 3
+Discount: 10% off
+Total: $21.60
+
+Steps: 
+Step 1: use switch to find food name and price
+Step 2: use if/else to validate quantity
+Step 3: calculate total
+Step 4: apply discount if total >= $20
+Step 5: print order summary
+*/
+function orderFood(itemCode, quantity) {
+  let result;
+  switch (itemCode) {
+    case 'B':
+      if (quantity <= 0) {
+        result = 'Invalid quantity';
+      } else {
+        result = 'Burger $5';
+      }
+      break;
+    case 'P':
+      if (quantity <= 0) {
+        result = 'Invalid quantity';
+      } else {
+        result = 'Pizza $8';
+      }
+      break;
+    case 'S':
+      if (quantity <= 0) {
+        result = 'Invalid quantity';
+      } else {
+        result = 'Sushi $12';
+      }
+      break;
+    case 'T':
+      if (quantity <= 0) {
+        result = 'Invalid quantity';
+      } else {
+        result = 'Tacos $6';
+      }
+      break;
+    default:
+      result = 'Invalid item';
+      break;
+  }
+
+  return result;
+}
+
+console.log(orderFood('B', 0)); // Invalid quantity
+console.log(orderFood('T', 12)); // Tacos $6
+
 // node src/recap/10-Conditional-Logics/05_Switch/script.js
