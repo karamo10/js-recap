@@ -338,5 +338,6 @@ function orderFood(itemCode, quantity) {
 
 console.log(orderFood('B', 0)); // Invalid quantity
 console.log(orderFood('T', 12)); // Tacos $6
+console.log(orderFood("P", 2)); // Pizza $8
 
 // node src/recap/10-Conditional-Logics/05_Switch/script.js
