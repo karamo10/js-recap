@@ -9,7 +9,7 @@ var myName = "K4ra"
 myName = "Camz"
 
 // let
-let ourName = "Gamer" 
+let ourName = "Programmers" 
 ourName = "Fighters"
 
 // const
