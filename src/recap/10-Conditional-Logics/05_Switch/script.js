@@ -297,47 +297,56 @@ Step 3: calculate total
 Step 4: apply discount if total >= $20
 Step 5: print order summary
 */
+
 function orderFood(itemCode, quantity) {
-  let result;
-  switch (itemCode) {
-    case 'B':
-      if (quantity <= 0) {
-        result = 'Invalid quantity';
-      } else {
-        result = 'Burger $5';
-      }
-      break;
-    case 'P':
-      if (quantity <= 0) {
-        result = 'Invalid quantity';
-      } else {
-        result = 'Pizza $8';
-      }
-      break;
-    case 'S':
-      if (quantity <= 0) {
-        result = 'Invalid quantity';
-      } else {
-        result = 'Sushi $12';
-      }
-      break;
-    case 'T':
-      if (quantity <= 0) {
-        result = 'Invalid quantity';
-      } else {
-        result = 'Tacos $6';
-      }
-      break;
-    default:
-      result = 'Invalid item';
-      break;
+  let foodName;
+  let price;
+  // step 1: validating quantity first
+  if (quantity <= 0) {
+    console.log('Invalid quantity');
+    return;
   }
 
-  return result;
+  // step 2: switching to find food and price
+  switch (itemCode) {
+    case 'B':
+      foodName = 'Burger';
+      price = 5;
+      break;
+    case 'P':
+      foodName = 'Pizza';
+      price = 8;
+      break;
+    case 'S':
+      foodName = 'Sushi';
+      price = 12;
+      break;
+    case 'T':
+      foodName = 'Tacos';
+      price = 6;
+      break;
+    default:
+      console.log('Invalid item');
+      return;
+  }
+
+  // step 3: calculating the total
+  let total = price * quantity;
+
+  // step 4: apply 10% discount if total >= 20
+  if (total >= 20) {
+    total = total - total * 0.10;
+  }
+
+  console.log('Order:', foodName);
+  console.log('Quantity:', quantity);
+  console.log('Total: $', + total);
 }
 
-console.log(orderFood('B', 0)); // Invalid quantity
-console.log(orderFood('T', 12)); // Tacos $6
-console.log(orderFood("P", 2)); // Pizza $8
+orderFood('B', 1);
+orderFood('S', 3);
+orderFood('T', 4);
+orderFood('X', 2);
+orderFood('P', 0);
 
 // node src/recap/10-Conditional-Logics/05_Switch/script.js
