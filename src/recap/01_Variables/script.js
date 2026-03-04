@@ -39,6 +39,6 @@ my_variable = "JavaScript";
 
 // but it's good practice to use camelCase for variable names in JavaScript
 
-console.log("That's todays task!");
+console.log("Variables");
 
 // node src/recap/01_Variables/script.js
