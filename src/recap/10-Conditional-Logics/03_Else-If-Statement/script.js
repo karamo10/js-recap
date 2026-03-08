@@ -1,6 +1,5 @@
 // else if
-// if you have multiple conditions that needs
-// to be addressed, you can use 'else if statements.
+// if you have multiple conditions that needs to be addressed, you can use 'else if statements.
 
 // eg
 function testElseIfSample(val) {
@@ -18,7 +17,7 @@ console.log(testElseIfSample(7)); // Between 5 and 10
 // eg with else if statement
 function testElseIf(val) {
   if (val > 10) {
-    return 'Greather than 10';
+    return 'Greater than 10';
   } else if (val < 5) {
     return 'Smaller than 5';
   } else {

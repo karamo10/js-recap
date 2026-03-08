@@ -44,7 +44,7 @@ if (totalPrice >= 100) {
   finalPrice = totalPrice;
   console.log('No discount.');
 }
-console.log('Final price:GMD' + finalPrice);
+console.log('Final price:GMD', finalPrice);
 // output: 10% discount applied!
 // output: Final price: GMD72
 

@@ -2,6 +2,7 @@
 // when you have if else statements with multiple conditions, it is important to put them in the correct logical order.
 // for example if you have a condition that checks if a number is greater than 10 and another condition that checks if a number is greater than 5, you should put the condition that checks if the number is greater than 10 first, otherwise the condition that checks if the number is greater than 5 will always be true and the condition that checks if the number is greater than 10 will never be reached.
 
+// eg 1: incorrect logical order
 function orderMyLogic1(val) {
   if (val < 10) {
     return 'Less than 10';
@@ -16,7 +17,7 @@ function orderMyLogic1(val) {
 console.log(orderMyLogic1(7)); // output, Less than 10
 console.log(orderMyLogic1(3)); // output, Less than 10
 
-// applying the in If-Else logical order
+// eg 2: correct logical order
 function orderMyLogic(val) {
   if (val < 5) {
     return 'Less than 5';
@@ -27,6 +28,7 @@ function orderMyLogic(val) {
   }
 }
 console.log(orderMyLogic(3)); // Less than 5
+console.log(orderMyLogic(7)); // Less than 10
 
 // eg 2
 function testOrderMyLogic(val) {

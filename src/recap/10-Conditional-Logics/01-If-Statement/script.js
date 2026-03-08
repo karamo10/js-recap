@@ -183,7 +183,7 @@ function testLogicalOr(val) {
     return "No";
 }
 console.log(testLogicalOr(100)); // output "Yes"
-// note: with logical (OR ||) one statement(operand) has be true fot it to return Tsrue
+// note: with logical (OR ||) one statement(operand) has be true for it to return Tsrue
 
 // Comparison with the Logical NOT(!) Operator
 function testLogicalNot(valIsTrue) {
