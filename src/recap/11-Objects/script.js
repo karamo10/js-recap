@@ -296,7 +296,10 @@ function updateRecords(id, prop, value) {
 
 console.log(updateRecords(5439, "artist", "ABBA"));
 console.log(updateRecords(5439, "tracks", "Take a Chance on Me"));
+console.log(updateRecords("1245", "tracks", "Test"));
+
+// git commit message ""
 
 
 
-// node src/recap/11-Objects/script.js
+// node src/recap/11-Objects/script
