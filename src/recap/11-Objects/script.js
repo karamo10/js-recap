@@ -298,7 +298,6 @@ console.log(updateRecords(5439, "artist", "ABBA"));
 console.log(updateRecords(5439, "tracks", "Take a Chance on Me"));
 console.log(updateRecords("1245", "tracks", "Test"));
 
-// git commit message ""
 
 
 
