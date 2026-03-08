@@ -1,5 +1,5 @@
 // Objects
-// they are similer to Arrays execpt instead of "indexes" to access the data you use "property"
+// they are similer to Arrays except instead of "indexes" to access the data you use "property"
 
 // Creating my first object.
 let myDog = {
@@ -48,7 +48,7 @@ let player = testObj2[playerNumber]; // 'Papito'
 
 console.log("testObj: " + hatValue, shirtValue + " testObj1: " + entreeValue, drinkValue + " Player: ", player);
 
-// Updaing Object Properties.
+// Updating Object Properties.
 let ourDog = {
     "name": "Quincy",
     "legs": 4,
@@ -127,6 +127,7 @@ function phoneticLookup(val) {
             break;
     }
 
+    return result;
 }
 
 // sample with an {Object}
@@ -241,6 +242,61 @@ let firstFlower = myPlants[0].lists[0] // 'rose'
 console.log(secondTree + " & ", firstFlower);
 
 // Record Collection
+// each records is having a unique Id, they don't have the same information
+// we're suppose to create a updateRecords function, were we can pass the Id, the Property, and the Value.
+// and it is going to update our record collection with the property and the value, then return the update collection
+// if the we have an empty string for the value, it should just completely delete that property
+
+let collection = {
+    "2548": {
+        "album": "Slippery When Wet",
+        "artist": "Bon Jovi",
+        "tracks": [
+            "Let It Rock",
+            "You Give Love a Bad Name"
+        ]
+
+    },
+    "2468": {
+        "album": "1999",
+        "artist": "Prince",
+        "tracks": [
+            "1999",
+            "Little Red Corvette"
+        ]
+    },
+    "1245": {
+        "artist": "Robert Palmer",
+        "tracks": []
+    },
+    "5439": {
+        "album": "ABBA Gold",
+    }
+}
+
+let collectionCopy = JSON.parse(JSON.stringify(collection));
+
+// the function that update the record collection
+function updateRecords(id, prop, value) {
+    // check if the value is an empty string, if it is then delete that property
+    if (value === "") {
+        delete collection[id][prop];
+    } else if (prop === "tracks") { // if the property is "tracks" we're going to push the value to the end of the tracks array
+        // but if the tracks property is empty, we need to create it, and then push the value to it 
+        if (!collection[id].hasOwnProperty("tracks")) {
+            collection[id][prop] = [];
+        }
+        collection[id][prop].push(value);
+    } else { // if the property is not "tracks" then we just update or set the value for that property
+        collection[id][prop] = value;
+    }
+
+    return collection;
+}
+
+console.log(updateRecords(5439, "artist", "ABBA"));
+console.log(updateRecords(5439, "tracks", "Take a Chance on Me"));
+
 
 
 // node src/recap/11-Objects/script.js
