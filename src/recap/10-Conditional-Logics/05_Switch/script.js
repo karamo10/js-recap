@@ -1,7 +1,7 @@
-// Switch is just a cleaner way to write multiple conditions when checking one variable against many values.
+// Switch Statment is just a cleaner way to write multiple conditions when checking one variable against many values.
 
 /*
-write a switch statement which tests val nd sets answer for the folloeing conditions
+write a switch statement which tests val and sets answer for the following conditions
 1 -- "alpha"
 2 -- "beta"
 3 -- "gamma"
@@ -27,7 +27,7 @@ function caseInSwitch(val) {
 
   return answer;
 }
-// note: break 'stops the switch after a match is found'
+// note: break 'stops' the switch after a match is found'
 console.log(caseInSwitch(2)); // beta
 console.log(caseInSwitch(4)); // delta
 
@@ -338,15 +338,43 @@ function orderFood(itemCode, quantity) {
     total = total - total * 0.10;
   }
 
+  const discount = total >= 20 ? "10% of" : "No discount";
+  // step 5: print order summary
   console.log('Order:', foodName);
   console.log('Quantity:', quantity);
+  console.log("Discount:", discount);
   console.log('Total: $', + total);
 }
 
 orderFood('B', 1);
+/*
+Order: Burger
+Quantity: 1
+Discount: No discount
+Total: $ 5
+*/
 orderFood('S', 3);
+/*
+Order: Sushi
+Quantity: 3 
+Discount: 10% of
+Total: $ 32.4
+*/
 orderFood('T', 4);
+/*
+Order: Tacos
+Quantity: 4
+Discount: 10% of
+Total: $ 21.6
+*/
 orderFood('X', 2);
+/*
+Invalid item
+*/
 orderFood('P', 0);
+/*
+Invalid quantity
+*/
+
 
 // node src/recap/10-Conditional-Logics/05_Switch/script.js
