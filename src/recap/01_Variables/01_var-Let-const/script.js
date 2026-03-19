@@ -11,4 +11,3 @@ var myName = "Pabi"
 
 console.log(myName);
 // node src/recap/01_Variables/01_var-Let-const/script.js 2:38:00
-// commit -m "Added script for var, let and const differences"
