@@ -69,6 +69,4 @@ console.log(convertToInteger("10011")); // 19
 
 
 
-
-
 // node src/recap/13_Math/script.js
