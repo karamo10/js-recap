@@ -113,4 +113,4 @@ par + 1      "Bogey"
 */
 
 
-// node src/recap/10-Conditional-Logics/06_Challenges/script.js
+// node src/recap/10-Conditional-Logics/07_Challenges/script.js

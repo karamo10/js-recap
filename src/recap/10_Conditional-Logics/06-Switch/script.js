@@ -377,4 +377,4 @@ Invalid quantity
 */
 
 
-// node src/recap/10-Conditional-Logics/05_Switch/script.js
+// node src/recap/10-Conditional-Logics/06_Switch/script.js
